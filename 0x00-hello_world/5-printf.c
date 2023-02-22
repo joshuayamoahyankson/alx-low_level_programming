@@ -2,13 +2,13 @@
 
 /**
  * main - Entry point
- *
- * Description : Print "with proper grammar, but the outcome is a piece of art,"
- *
- * Return: Always 0 (Success)
+ * Description : Printing text with printf
+ * Return: 0
  */
+
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
+
 }
