@@ -7,7 +7,7 @@
 /**
  * main - Entry point of program
  * Description: print the last digit of the number stored in the variable n
- * Return :Always 0
+ * Return: Always 0
  */
 
 int main(void)
