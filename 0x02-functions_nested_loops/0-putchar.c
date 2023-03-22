@@ -11,7 +11,25 @@
 
 int main(void)
 {
-	char c[] = "_putchar";
-	_putchar("%s\n", c);
+	char alpha;
+
+	alpha = '_';
+	_putchar(alpha);
+	alpha = 'p';
+	_putchar(alpha);
+	alpha = 'u';
+	_putchar(alpha);
+	alpha = 't';
+	_putchar(alpha);
+	alpha = 'c';
+	_putchar(alpha);
+	alpha = 'h';
+	_putchar(alpha);
+	alpha = 'a';
+	_putchar(alpha);
+	alpha = 'r';
+	_putchar(alpha);
+
+	_putchar('\n');
 	return (0);
 }
