@@ -2,16 +2,11 @@ Welcome to my Command-line arguments (0x0A-argc_argv) task/project at ALX!
 
 0x0A. C - argc, argv
 C
- By: Julien Barbier
- Weight: 1
- Ongoing second chance project - started Apr 6, 2023 6:00 AM, must end by Apr 16, 2023 6:00 AM
- An auto review will be launched at the deadline
-In a nutshell…
-Auto QA review: 0.0/37 mandatory & 0.0/9 optional
-Altogether:  0.0%
-Mandatory: 0.0%
-Optional: 0.0%
-Calculation:  0.0% + (0.0% * 0.0%)  == 0.0%
+By: Julien Barbier
+Weight: 1
+Project will start Jun 9, 2023 6:00 AM, must end by Jun 10, 2023 6:00 AM
+Checker was released at Jun 9, 2023 12:00 PM
+An auto review will be launched at the deadline
 Resources
 Read or watch:
 
