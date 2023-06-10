@@ -3,18 +3,14 @@ Welcome to my ALX task/project about Static Library (0x09-static_libraries)
 Below are the assignment requirements and questions!
 
 
-You have a captain's log due before 2023-04-16 (in about 13 hours)! Log it now!
+
 0x09. C - Static libraries
 C
  By: Julien Barbier
  Weight: 1
- Ongoing second chance project - started Apr 6, 2023 6:00 AM, must end by Apr 16, 2023 6:00 AM
+ Project will start Jun 9, 2023 6:00 AM, must end by Jun 10, 2023 6:00 AM
+ Checker was released at Jun 9, 2023 12:00 PM
  An auto review will be launched at the deadline
-In a nutshell…
-Auto QA review: 0.0/24 mandatory
-Altogether:  0.0%
-Mandatory: 0.0%
-Optional: no optional tasks
 Concepts
 For this project, we expect you to look at this concept:
 
