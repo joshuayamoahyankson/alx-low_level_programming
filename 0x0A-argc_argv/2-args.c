@@ -14,11 +14,11 @@
 
 int main(int argc, char **argv)
 {
-	int arguments;
+	int print_arguments;
 
-	for (arguments = 0; arguments < argc; ++arguments)
+	for (print_arguments = 0; print_arguments < argc; ++print_arguments)
 	{
-		printf("%s\n", argv[arguments]);
+		printf("%s\n", argv[print_arguments]);
 	}
 	return (0);
 }
