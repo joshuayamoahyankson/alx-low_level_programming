@@ -14,7 +14,7 @@
  * If the program does not receive two arguments,
  * your program should print Error
  * followed by a new line, and return 1
- * Return: Alway 0
+ * Return: Always 0
  */
 
 int main(int argc, char **argv)
