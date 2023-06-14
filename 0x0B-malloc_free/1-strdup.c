@@ -23,23 +23,22 @@
 
 char *_strdup(char *str)
 {
-	char *pointer;
-	int i;
+	char *new_pointer_var;
+	int count;
+	int length = (strlen(str) + 1);
 
-	for (i = 0; i < str[i]; ++i)
-	{
-		if (str[i] != '\0')
-		{
-			pointer = malloc(i * sizeof(char) + 1);
-		}
-	}
-	if (pointer == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; str[i] != '\0'; ++i)
+	new_pointer_var = malloc(length * sizeof(char));
+
+	if (new_pointer_var != NULL)
 	{
-		pointer[i] = str[i];
+		for (count = 0; count < length; ++count)
+		{
+			new_pointer_var[count] = str[count];
+		}
 	}
-	return (pointer);
+	return (new_pointer_var);
 }
