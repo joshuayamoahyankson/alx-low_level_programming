@@ -21,22 +21,18 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *array;
-	unsigned int i;
-	unsigned int malloc_value = (nmemb * sizeof(size));
+	void *array_memory;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	array = malloc(malloc_value);
-	if (array == NULL)
+	array_memory = malloc(nmemb * size);
+
+	if (array_memory == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < malloc_value; ++i)
-	{
-		*((char *) array + i)  = 0;
-	}
-	return (array);
+	memset(array_memory, 0, (nmemb * size));
+	return (array_memory);
 }
