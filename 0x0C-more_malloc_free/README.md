@@ -5,11 +5,12 @@ Below are the tasks requirements and questions!
 0x0C. C - More malloc, free
 C
 Memory allocation
- By: Julien Barbier
- Weight: 1
- Project will start Apr 13, 2023 6:00 AM, must end by Apr 14, 2023 6:00 AM
- Checker was released at Apr 13, 2023 12:00 PM
- An auto review will be launched at the deadline
+By: Julien Barbier
+Weight: 1
+Project will start Jun 15, 2023 6:00 AM, must end by Jun 16, 2023 6:00 AM
+Checker was released at Jun 15, 2023 12:00 PM
+An auto review will be launched at the deadline
+
 Concepts
 For this project, we expect you to look at this concept:
 

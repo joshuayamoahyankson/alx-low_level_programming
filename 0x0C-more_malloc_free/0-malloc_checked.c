@@ -15,11 +15,11 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *allocated = malloc(b);
+	void *allocated_space = malloc(b);
 
-	if (allocated == NULL)
+	if (allocated_space == NULL)
 	{
 		exit(98);
 	}
-	return (allocated);
+	return (allocated_space);
 }
