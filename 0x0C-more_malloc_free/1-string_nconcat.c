@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
+#include <string.h>
 /**
  * *string_nconcat - the function prototype name that concatenates two strings
  * @s1: the first string parameter to add to
@@ -19,42 +19,31 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *string;
-	unsigned int first_str = 0, second_str = 0, i;
+	char *string_concat;
+	int length_s1 = strlen(s1);
+	unsigned int length_s2 = strlen(s2);
 
-	if (s1 == NULL)
+	string_concat = malloc(length_s1 + n + 1);
+
+	if (string_concat == NULL)
 	{
-		s1 = "";
+		return ("");
 	}
-	else if (s2 == NULL)
-	{
-		s2 = NULL;
-	}
-	while (s1[first_str] != '\0')
-	{
-		++first_str;
-	}
-	while (s2[second_str] != '\0')
-	{
-		++second_str;
-	}
-	if (n >= second_str)
-	{
-		n = second_str;
-	}
-	string = malloc(sizeof(char) * (first_str + n + 1));
-	if (string == NULL)
+
+	if (string_concat == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < first_str; ++i)
+	strcpy(string_concat, s1);
+
+	strncpy((string_concat + length_s1), s2, n);
+	string_concat[length_s1 + n] = '\0';
+
+	if (n >= length_s2)
 	{
-		string[i] = s1[i];
+		strcpy((string_concat + length_s1), s2);
 	}
-	for (i = 0; i < n; ++i)
-	{
-		string[first_str + i] = s2[i];
-	}
-	string[first_str + n] = '\0';
-	return (string);
+
+	return (string_concat);
+
 }
