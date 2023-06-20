@@ -2,15 +2,6 @@ Welcome to my ALX task/project on Structures and typedef in C (0x0E-structures_t
 
 Below are the different assignments with Instructions:
 
-
-0x0E. C - Structures, typedef
-In a nutshell…
-Auto QA review: 0.0/44 mandatory
-Altogether:  0.0%
-Mandatory: 0.0%
-Optional: no optional tasks
-
-
 Resources
 Read or watch:
 
