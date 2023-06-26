@@ -35,7 +35,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		string_arg = va_arg(print_str, char *);
 		printf("%s", string_arg);
 		{
-			if (string_arg == 0)
+			if (string_arg == NULL)
 			{
 				printf("nil");
 			}
