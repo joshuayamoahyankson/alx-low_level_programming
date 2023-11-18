@@ -21,27 +21,13 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-
 	else if (n == 0 || n == 1)
 	{
 		return (n);
 	}
 	else
 	{
-		num_1 = (n / 2);
-		num_2 = _sqrt_recursion(n - 1);
 
-		if (num_1 * num_2 > n)
-		{
-			return _sqrt_recursion(n - 1);
-		}
-		else if (num_2 * num_2 == n)
-		{
-			return num_2;
-		}
-		else
-		{
-			return (_sqrt_recursion(n - 1));
-		}
 	}
+
 }
