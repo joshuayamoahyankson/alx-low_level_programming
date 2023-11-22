@@ -19,34 +19,30 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *concatenate_pointer;
-	int length_1 = (strlen(s1));
-	int length_2 = (strlen(s2));
 	int i, x;
-	int lengths = length_1 + length_2;
+	int len_1 = strlen(s1);
+	int len_2 = strlen(s2);
+	int total_len = len_1 + len_2;
 
-	if (s1 == NULL)
-	{
-		return ("");
-	}
-	if (s2 == NULL)
+	if (s1 == NULL || s2 == NULL)
 	{
 		return ("");
 	}
 
-	concatenate_pointer = malloc(lengths + 1 * sizeof(char));
+	concatenate_pointer = malloc(total_len + 1);
 
 	if (concatenate_pointer == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i < length_1; ++i)
+	for (i = 0; i < len_1; ++i)
 	{
 		concatenate_pointer[i] = s1[i];
 	}
-	for (x = 0; x < length_2; ++x)
+	for (x = 0; x < len_2; ++x)
 	{
-		concatenate_pointer[length_1 + x] = s2[x];
+		concatenate_pointer[len_1 + x] = s2[x];
 	}
 	return (concatenate_pointer);
 }
