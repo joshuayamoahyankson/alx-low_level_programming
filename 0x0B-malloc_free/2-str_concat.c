@@ -24,7 +24,11 @@ char *str_concat(char *s1, char *s2)
 	int len_2 = strlen(s2);
 	int total_len = len_1 + len_2;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
+	{
+		return ("");
+	}
+	if (s2 == NULL)
 	{
 		return ("");
 	}
