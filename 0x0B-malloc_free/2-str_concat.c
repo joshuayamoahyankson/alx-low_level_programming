@@ -26,11 +26,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return ("");
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		return ("");
+		s2 = "";
 	}
 
 	concatenate_pointer = malloc(total_len + 1);
@@ -48,5 +48,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		concatenate_pointer[len_1 + x] = s2[x];
 	}
+	concatenate_pointer[total_len] = '\0';
 	return (concatenate_pointer);
 }
