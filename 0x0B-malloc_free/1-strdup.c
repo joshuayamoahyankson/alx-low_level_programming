@@ -33,12 +33,15 @@ char *_strdup(char *str)
 	}
 	new_pointer_var = malloc(length_of_str);
 
-	if (new_pointer_var != NULL)
+	if (new_pointer_var == NULL)
 	{
-		for (value = 0; value < length_of_str; ++value)
-		{
-			new_pointer_var[value] = str[value];
-		}
+		return (NULL);
 	}
+
+	for (value = 0; value < length_of_str; ++value)
+	{
+		new_pointer_var[value] = str[value];
+	}
+
 	return (new_pointer_var);
 }
