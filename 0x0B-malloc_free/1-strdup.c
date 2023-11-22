@@ -24,20 +24,20 @@
 char *_strdup(char *str)
 {
 	char *new_pointer_var;
-	int count;
-	int length = (strlen(str) + 1);
+	int value;
+	int length_of_str = (strlen(str) + 1);
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	new_pointer_var = malloc(length * sizeof(char));
+	new_pointer_var = malloc(length_of_str);
 
 	if (new_pointer_var != NULL)
 	{
-		for (count = 0; count < length; ++count)
+		for (value = 0; value < length_of_str; ++value)
 		{
-			new_pointer_var[count] = str[count];
+			new_pointer_var[value] = str[value];
 		}
 	}
 	return (new_pointer_var);
