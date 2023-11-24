@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - the program entry point that multiplies arguments at Command-line
@@ -44,7 +45,13 @@ int main(int argc, char **argv)
 	}
 	num_1 = atoi(argv[1]);
 	num_2 = atoi(argv[2]);
-	result = (num_1 * num_2);
 
+	if (num_1 < 0 || num_2 < 0)
+	{
+		printf("Error\n");
+		return (98);
+	}
+	result = (num_1 * num_2);
+	printf("%d\n", result);
 	return (result);
 }
