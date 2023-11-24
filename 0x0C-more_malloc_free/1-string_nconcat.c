@@ -19,31 +19,31 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *string_concat;
-	int length_s1 = strlen(s1);
+	char *ptr;
+	unsigned int length_s1 = strlen(s1);
 	unsigned int length_s2 = strlen(s2);
 
-	string_concat = malloc(length_s1 + n + 1);
+	ptr = malloc(length_s1 + n + 1);
 
-	if (string_concat == NULL)
+	if (ptr == NULL)
 	{
 		return ("");
 	}
 
-	if (string_concat == NULL)
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	strcpy(string_concat, s1);
+	strcpy(ptr, s1);
 
-	strncpy((string_concat + length_s1), s2, n);
-	string_concat[length_s1 + n] = '\0';
+	strncpy((ptr + length_s1), s2, n);
+	ptr[length_s1 + n] = '\0';
 
 	if (n >= length_s2)
 	{
-		strcpy((string_concat + length_s1), s2);
+		strcpy((ptr + length_s1), s2);
 	}
 
-	return (string_concat);
+	return (ptr);
 
 }
