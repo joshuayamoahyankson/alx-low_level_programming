@@ -18,16 +18,22 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	struct dog *newDog = (struct dog *)malloc(sizeof(struct dog));
 
-	newDog->name = (char *)malloc(strlen(name) + 1);
-	newDog->owner = (char *)malloc(strlen(owner) + 1);
-
 	if (newDog == NULL)
 	{
 		return (NULL);
 	}
-	strcpy(newDog->name, name);
+	size_t name_len = strlen(name);
+	size_t owner_len = strlen(owner);
+
+	char *name_copy = malloc(name_len + 1);
+	char *owner_copy = malloc(owner_len + 1);
+
+	strcpy(name_copy, name);
+	strcpy(owner_copy, owner);
+
+	newDog->name = name_copy;
 	newDog->age = age;
-	strcpy(newDog->owner, owner);
+	newDog->owner = owner_copy;
 
 	return (newDog);
 }
