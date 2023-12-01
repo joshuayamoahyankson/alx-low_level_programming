@@ -33,11 +33,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (loop_var = 0; loop_var < n; ++loop_var)
 	{
 		string_arg = va_arg(print_str, char *);
-		printf("%s", string_arg);
 		{
 			if (string_arg == NULL)
 			{
 				printf("nil");
+			}
+			else
+			{
+				printf("%s", string_arg);
 			}
 		}
 		{
