@@ -25,14 +25,14 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int loop_var;
-	char *string_arg;
+	const char *string_arg;
 	va_list print_str;
 
 	va_start(print_str, n);
 
 	for (loop_var = 0; loop_var < n; ++loop_var)
 	{
-		string_arg = va_arg(print_str, char *);
+		string_arg = va_arg(print_str, const char *);
 		{
 			if (string_arg == NULL)
 			{
