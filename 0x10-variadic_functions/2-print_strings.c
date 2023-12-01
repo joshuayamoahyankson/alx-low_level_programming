@@ -41,7 +41,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			}
 		}
 		{
-			if (loop_var < n - 1 && separator != NULL)
+			if (separator != NULL && loop_var != n - 1)
 			{
 				printf("%s", separator);
 			}
