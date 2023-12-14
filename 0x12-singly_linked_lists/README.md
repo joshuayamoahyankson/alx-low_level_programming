@@ -2,9 +2,9 @@ Welcome to ALX singly linked lists project.
 
 Title: Singly linked lists.
 
-Description: A Singly linked list is a collection of data called nodes, where each node is divided into two parts to store data and address at some random addresses. The pointer next, points to the address of the next node in a list. Compared to the array data structure, the size of the linked list elements is not fixed. (simplilearn.com)
+Description: A Singly linked list is a collection of data called nodes, where each node is divided into two parts to store data and address at some random addresses. The pointer next, points to the address of the next node in a list. Compared to the array data structure, the size of the linked list elements is not fixed.(simplilearn.com)
 
-Requiremnets: 
+Requiremnets:
 
 General
 Allowed editors: vi, vim, emacs
