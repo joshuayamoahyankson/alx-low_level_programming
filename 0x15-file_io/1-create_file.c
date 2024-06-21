@@ -2,13 +2,13 @@
 
 /**
  * create_file - the function name that creates a file
- * filename: a pointer of type char as a parameter that
+ * @filename: a pointer of type char as a parameter that
  * is the file to create
- * text_content: a pointer that in NULL terminated string
+ * @text_content: a pointer that in NULL terminated string
  * Description: Create a function that creates a file.
- * Prototype: int create_file(const char *filename, char 
+ * Prototype: int create_file(const char *filename, char
  * *text_content);
- * where filename is the name of the file to create and 
+ * where filename is the name of the file to create and
  * text_content is a NULL terminated string to write to the file
  * Returns: 1 on success, -1 on failure (file can not be created,
  * file can not be written, write “fails”, etc…)
@@ -30,7 +30,7 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	if (text_content != NULL)
-	{ 
+	{
 		if (fprintf(fp, "%s", text_content) < 0)
 		{
 			fclose(fp);
@@ -44,8 +44,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (chmod(filename, S_IRUSR | S_IWUSR) == -1)
 	{
-		return -1;
+		return (-1);
 	}
 	return (1);
-	
 }
